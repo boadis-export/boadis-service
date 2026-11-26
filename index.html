@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>汽车出口独立站 + 出口单证 · BOADIS 数字服务</title>
+<meta name="description" content="给汽车出口商做能接询盘的独立站，加出口单证 7 套。三档打包 9,800 / 15,800 / 25,800，10 个工作日交付。">
+<meta name="robots" content="noindex,nofollow">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1f3864;--blue:#2e75b6;--ink:#1b2432;--grey:#6b7787;--line:#e3eaf3;--bg:#f7f9fc}
+body{font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+a{color:var(--blue);text-decoration:none}
+.topbar{background:var(--navy);color:#cfdcef;font-size:13.5px;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.hero{padding:72px 0 56px;background:linear-gradient(180deg,#f2f6fc,#fff)}
+.kicker{color:var(--blue);font-weight:700;letter-spacing:.08em;font-size:13px;text-transform:uppercase}
+h1{font-size:40px;line-height:1.28;color:var(--navy);margin:14px 0 18px;letter-spacing:-.5px}
+h1 em{font-style:normal;color:var(--blue)}
+.lead{font-size:18px;color:#3d4a5c;max-width:760px}
+.cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;font-size:15.5px}
+.btn-main{background:var(--blue);color:#fff}
+.btn-ghost{border:1.5px solid var(--line);color:var(--navy);background:#fff}
+section{padding:64px 0}
+.sec-head{margin-bottom:34px}
+.sec-head h2{font-size:27px;color:var(--navy);letter-spacing:-.3px}
+.sec-head p{color:var(--grey);margin-top:8px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.card{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff}
+.card h3{font-size:17.5px;color:var(--navy);margin-bottom:8px}
+.card p{color:#4a5565;font-size:15px}
+.pain{background:#fbfcfe}
+.pain .num{width:30px;height:30px;border-radius:50%;background:#e8f0fb;color:var(--blue);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;margin-bottom:12px}
+.shot{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.shot img{width:100%;height:320px;object-fit:cover;object-position:top center;display:block}
+.shot .cap{padding:14px 18px;border-top:1px solid var(--line)}
+.shot .cap b{color:var(--navy);font-size:15.5px}
+.shot .cap span{display:block;color:var(--grey);font-size:13.5px;margin-top:4px}
+.case{background:var(--navy);color:#dbe6f6;padding:56px 0}
+.case h2{color:#fff;font-size:26px}
+.case .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:26px 0 22px}
+.case .n b{display:block;font-size:38px;color:#fff;line-height:1.1}
+.case .n span{font-size:13.5px;color:#a9c0dd}
+.price{background:#f7f9fc}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tier{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 22px;position:relative}
+.tier.hot{border:2px solid var(--blue);box-shadow:0 10px 30px rgba(46,117,182,.12)}
+.tier .tag{position:absolute;top:-12px;left:22px;background:var(--blue);color:#fff;font-size:12px;padding:3px 10px;border-radius:99px}
+.tier h3{font-size:19px;color:var(--navy)}
+.tier .p{font-size:32px;color:var(--navy);font-weight:800;margin:10px 0 2px}
+.tier .p small{font-size:14px;font-weight:500;color:var(--grey)}
+.tier ul{list-style:none;margin-top:16px;font-size:14.6px;color:#42505f}
+.tier li{padding-left:18px;position:relative;margin-bottom:7px}
+.tier li:before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
+.step{border-top:3px solid var(--blue);padding-top:14px}
+.step b{display:block;color:var(--navy);font-size:15.5px}
+.step span{font-size:13.5px;color:var(--grey)}
+.step em{font-style:normal;font-size:12.5px;color:var(--blue);font-weight:700}
+.contact{background:#f2f6fc}
+.contact .inner{display:grid;grid-template-columns:340px 1fr;gap:40px;align-items:start}
+.qr{border:1px dashed #b9cbe4;border-radius:12px;padding:20px;text-align:center;background:#fff}
+.qr .box{width:190px;height:190px;margin:0 auto 12px;border-radius:10px;background:#eef3fb;display:flex;align-items:center;justify-content:center;color:#8fa6c4;font-size:13px;line-height:1.5}
+.qr b{color:var(--navy)}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input,textarea,select{width:100%;border:1px solid var(--line);border-radius:8px;padding:11px 13px;font:inherit;font-size:14.5px;background:#fff}
+textarea{min-height:96px;resize:vertical}
+label{display:block;font-size:13px;color:var(--grey);margin:12px 0 6px}
+.note{font-size:13px;color:var(--grey);margin-top:14px}
+footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
+@media(max-width:900px){.grid3,.grid2,.tiers,.steps,.case .nums{grid-template-columns:1fr}h1{font-size:30px}.contact .inner{grid-template-columns:1fr}}
+</style>
+</head><body>
+
+<div class="topbar"><div class="wrap"><span>BOADIS · 汽车出口数字服务</span><span>微信 L15988336681 · 先开演示站 3–5 天</span></div></div>
+
+<header class="hero"><div class="wrap">
+  <div class="kicker">For vehicle exporters</div>
+  <h1>给汽车出口商做<em>能接询盘的独立站</em> + <em>出口单证</em></h1>
+  <p class="lead">不是给你一个“好看的网站”，是把数据、询盘、单证串成一条能用的流水线：
+  买家自己看得懂行情与门槛，询盘带着他的浏览轨迹进邮箱，单证 8 分钟出一套。</p>
+  <div class="cta">
+    <a class="btn btn-main" href="#contact">先开一个演示站（3–5 天）</a>
+    <a class="btn btn-ghost" href="https://boadis.com" target="_blank" rel="noopener">看真实案例 boadis.com →</a>
+  </div>
+</div></header>
+
+<section class="pain"><div class="wrap">
+  <div class="sec-head"><h2>三个问题，模板站解决不了</h2>
+  <p>建站公司给你的是一张皮，出口商真正缺的是皮下面的东西。</p></div>
+  <div class="grid3">
+    <div class="card"><div class="num">1</div><h3>模板站没有数据</h3>
+      <p>只有车型图和一串“联系我们”。买家看不到这台车在他国家什么价、能不能进、要什么认证——于是他去问下一个人。</p></div>
+    <div class="card"><div class="num">2</div><h3>询盘进邮箱就丢了</h3>
+      <p>表单提交完就是一堆散乱邮件：谁看的、看了哪国、看了几次、值不值得跟，全靠人记。一个月后没人说得清线索在哪一步丢的。</p></div>
+    <div class="card"><div class="num">3</div><h3>单证靠人肉 Excel</h3>
+      <p>装箱单、发票、合同、报关单、要素、翻译件各一份表，VIN 复制来复制去，目的港漏填就显示 0——报关行退单一次，船期就废了。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>交付物：看得见的东西</h2><p>下面每张图都是我们已经上线或已跑通的东西，不是效果图。</p></div>
+  <div class="grid2">
+    <div class="shot"><img src="assets/shot-themes.jpg" alt="三套主题"><div class="cap"><b>独立站（5 语）</b><span>英/西/法/俄/阿，一套内容三种气质；手机端同样能看</span></div></div>
+    <div class="shot"><img src="assets/shot-cars.jpg" alt="车型库"><div class="cap"><b>车型库 + 规格单页</b><span>66 款车、参数/装载量/价格区间齐全，规格单页可直接发客户</span></div></div>
+    <div class="shot"><img src="assets/shot-market.png" alt="目的国页"><div class="cap"><b>目的国页</b><span>准入规则、认证、关税、月度出口量、物流航期，一页说清</span></div></div>
+    <div class="shot"><img src="assets/shot-docs.png" alt="出口单证"><div class="cap"><b>出口单证 7 套</b><span>装箱单/发票/合同/报关单/要素/行驶证对照/合格证对照，8 分钟一票</span></div></div>
+    <div class="shot"><img src="assets/shot-report.png" alt="月报"><div class="cap"><b>每月一页纸报表</b><span>询盘数、来自哪国、看了哪些车、流失在哪，附三条改进建议</span></div></div>
+    <div class="shot"><img src="assets/shot-spec.jpg" alt="规格单页"><div class="cap"><b>询盘闭环</b><span>表单直达邮箱 + 线索评分（看几次、比几款、停多久）+ 按国家分派</span></div></div>
+  </div>
+</div></section>
+
+<section class="case"><div class="wrap">
+  <h2>案例：BOADIS（汽车出口商）</h2>
+  <div class="nums">
+    <div class="n"><b>66</b><span>款车型 · 参数与装载量</span></div>
+    <div class="n"><b>10</b><span>个品牌 · 含商用车线</span></div>
+    <div class="n"><b>5</b><span>种语言 · 同一后台</span></div>
+    <div class="n"><b>19</b><span>个目的国 · 准入与认证</span></div>
+  </div>
+  <p>BOADIS 是一家做吉利整车出口的香港公司。买家在 boadis.com 上看目的国行情与车型，询盘带着浏览轨迹进他们的邮箱，旺季一天出十几套单证——这套东西就是照他们的日常业务做的。</p>
+  <p style="margin-top:14px"><a class="btn btn-ghost" href="https://boadis.com" target="_blank" rel="noopener" style="background:transparent;color:#fff;border-color:#3d5c8a">打开 boadis.com →</a></p>
+</div></section>
+
+<section class="price"><div class="wrap">
+  <div class="sec-head"><h2>三档打包</h2><p>建站 + 单证一起做，比分开找人省 30% 以上；次年只收维护费。</p></div>
+  <div class="tiers">
+    <div class="tier"><h3>起步</h3><div class="p">¥9,800<small> / 首年</small></div>
+      <ul><li>单语独立站（英）</li><li>20 款车型 + 图片处理</li><li>询盘表单直达邮箱</li><li>单证模板 7 套（不含代办）</li><li>次年 ¥4,800</li></ul></div>
+    <div class="tier hot"><span class="tag">多数人选</span><h3>标准</h3><div class="p">¥15,800<small> / 首年</small></div>
+      <ul><li>三语站点 + 目的国页 5 个</li><li>60 款车型 + 规格单页</li><li>线索评分 + 按国家分派</li><li>单证 7 套 + 录入表 + 校验</li><li>每月一页报表</li><li>次年 ¥7,800</li></ul></div>
+    <div class="tier"><h3>旗舰</h3><div class="p">¥25,800<small> / 首年</small></div>
+      <ul><li>五语站点 + 目的国页 15 个</li><li>全部车型 + 商用车线</li><li>询盘运营（评分/分派/月报）</li><li>单证 + 客户门户</li><li>季度复盘会</li><li>次年 ¥12,800</li></ul></div>
+  </div>
+  <p class="note">单点加项：加语言 ¥1,500 · 加国家 ¥300/个 · 加车型图 ¥80/款 · 视频 ¥600/条 · 单证单票代办 ¥300 起。</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>10 个工作日，5 步</h2><p>你只需要给资料，剩下的我们做；第 5 步当天就能上线。</p></div>
+  <div class="steps">
+    <div class="step"><em>Day 1–2</em><b>收资料</b><span>公司信息、车型与价格表、图片、目的国</span></div>
+    <div class="step"><em>Day 3–4</em><b>清洗与配图</b><span>价格区间打码、图片压缩打码、缺图补齐</span></div>
+    <div class="step"><em>Day 5–6</em><b>生成与填文案</b><span>站点生成、目的国文案、单证录入表</span></div>
+    <div class="step"><em>Day 7–8</em><b>验收与改</b><span>你逐页点一遍，我们改；含 3 轮小改</span></div>
+    <div class="step"><em>Day 9–10</em><b>上线</b><span>域名/邮箱/表单/反爬，交付后台与说明</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="sec-head"><h2>聊聊你的站</h2><p>先说清楚你要卖什么、卖给谁，我们判断能不能做；不能做会直说。</p></div>
+  <div class="inner">
+    <div class="qr">
+      <div class="box">微信二维码<br>（待放置）</div>
+      <b>微信：L15988336681</b>
+      <p class="note">加微信请备注「建站」，我会先发你一个同类案例。</p>
+    </div>
+    <form action="https://formsubmit.co/1524322544@qq.com" method="POST">
+      <input type="hidden" name="_subject" value="Service inquiry from service page">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <div class="row">
+        <div><label>称呼 *</label><input name="name" required placeholder="怎么称呼你"></div>
+        <div><label>手机 / 微信 *</label><input name="phone" required placeholder="方便联系你的方式"></div>
+      </div>
+      <div class="row">
+        <div><label>公司</label><input name="company" placeholder="公司名称"></div>
+        <div><label>现在有网站吗</label>
+          <select name="current"><option>没有</option><option>有，但没人管</option><option>有，想重做</option></select></div>
+      </div>
+      <label>想解决什么</label>
+      <textarea name="message" placeholder="比如：主要出口阿尔及利亚和西非，想做个英文站，另外单证老是出错。"></textarea>
+      <label>预算区间</label>
+      <select name="budget"><option>1 万以内</option><option>1–2 万</option><option>2 万以上</option><option>先看效果再定</option></select>
+      <div style="margin-top:18px"><button class="btn btn-main" type="submit" style="border:0;cursor:pointer;width:100%">发送，2 个工作日内回你</button></div>
+      <p class="note">我们不做“保证询盘量”的承诺，也不代投广告；只保证站能打开、数据是真的、单证能过。</p>
+    </form>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  BOADIS EXPORT &amp; IMPORT CO., LIMITED · 香港博遠進出口有限公司<br>
+  Room H11, 1/F, Kaiser Estate Phase 2, 51 Man Yue Street, Hung Hom, Hong Kong<br>商务邮箱 sales@boadis.com · 微信 L15988336681
+</div></footer>
+
+</body></html>
