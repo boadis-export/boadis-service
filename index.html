@@ -2,8 +2,8 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>汽车出口独立站 + 出口单证 · BOADIS 数字服务</title>
-<meta name="description" content="给汽车出口商做能接询盘的独立站，加出口单证 7 套。三档打包 9,800 / 15,800 / 25,800，10 个工作日交付。">
+<title>汽车出口独立站 + 出口单证 · 服务说明</title>
+<meta name="description" content="给汽车出口商做能接询盘的独立站，加出口单证 7 套。单国试做 2,980，三档打包 9,800 / 15,800 / 25,800。">
 <meta name="robots" content="noindex,nofollow">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -27,9 +27,9 @@ section{padding:64px 0}
 .sec-head h2{font-size:27px;color:var(--navy);letter-spacing:-.3px}
 .sec-head p{color:var(--grey);margin-top:8px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .grid2 .shot.wide{grid-column:1 / -1}
 .grid2 .shot.wide img{height:auto;max-height:520px}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .card{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff}
 .card h3{font-size:17.5px;color:var(--navy);margin-bottom:8px}
 .card p{color:#4a5565;font-size:15px}
@@ -48,6 +48,14 @@ section{padding:64px 0}
 .maplist li{display:flex;gap:10px;border-bottom:1px dashed var(--line);padding:6px 0}
 .maplist code{background:#eef3fb;color:var(--navy);padding:1px 7px;border-radius:4px;font-size:12.5px}
 .maplist em{margin-left:auto;color:var(--grey);font-style:normal;font-size:12.5px}
+table.cmp{width:100%;border-collapse:collapse;font-size:14.6px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
+table.cmp th{background:#f2f6fc;color:var(--navy);font-size:14px}
+table.cmp td.us{background:#f6faff}
+table.tbl{width:100%;border-collapse:collapse;font-size:14.2px;margin-top:14px}
+table.tbl th,table.tbl td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left}
+table.tbl th{color:var(--navy);font-size:13.6px}
+table.tbl td:last-child{color:var(--grey)}
 .case{background:var(--navy);color:#dbe6f6;padding:56px 0}
 .case h2{color:#fff;font-size:26px}
 .case .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:26px 0 22px}
@@ -64,6 +72,8 @@ section{padding:64px 0}
 .tier ul{list-style:none;margin-top:16px;font-size:14.6px;color:#42505f}
 .tier li{padding-left:18px;position:relative;margin-bottom:7px}
 .tier li:before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.trial{border:2px dashed var(--blue);border-radius:14px;padding:26px 28px;background:#f6faff}
+.trial .price-big{font-size:34px;color:var(--navy);font-weight:800}
 .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
 .step{border-top:3px solid var(--blue);padding-top:14px}
 .step b{display:block;color:var(--navy);font-size:15.5px}
@@ -80,11 +90,11 @@ textarea{min-height:96px;resize:vertical}
 label{display:block;font-size:13px;color:var(--grey);margin:12px 0 6px}
 .note{font-size:13px;color:var(--grey);margin-top:14px}
 footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
-@media(max-width:900px){.grid3,.grid2,.tiers,.steps,.case .nums{grid-template-columns:1fr}h1{font-size:30px}.contact .inner{grid-template-columns:1fr}}
+@media(max-width:900px){.grid3,.grid2,.tiers,.steps,.case .nums{grid-template-columns:1fr}h1{font-size:30px}.contact .inner{grid-template-columns:1fr}table.cmp{font-size:13.4px}}
 </style>
 </head><body>
 
-<div class="topbar"><div class="wrap"><span>BOADIS · 汽车出口数字服务</span><span>微信 L15988336681 · 先开演示站 3–5 天</span></div></div>
+<div class="topbar"><div class="wrap"><span>汽车出口独立站 · 出口单证</span><span>微信 L15988336681 · 单国试做 3–5 天出效果</span></div></div>
 
 <header class="hero"><div class="wrap">
   <div class="kicker">For vehicle exporters</div>
@@ -92,8 +102,8 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
   <p class="lead">不是给你一个“好看的网站”，是把数据、询盘、单证串成一条能用的流水线：
   买家自己看得懂行情与门槛，询盘带着他的浏览轨迹进邮箱，单证 8 分钟出一套。</p>
   <div class="cta">
-    <a class="btn btn-main" href="#contact">先开一个演示站（3–5 天）</a>
-    <a class="btn btn-ghost" href="https://boadis.com" target="_blank" rel="noopener">看真实案例 boadis.com →</a>
+    <a class="btn btn-main" href="#trial">先做一国试做（¥2,980，可全额抵扣）</a>
+    <a class="btn btn-ghost" href="#case">看脱敏试做 →</a>
   </div>
 </div></header>
 
@@ -111,28 +121,62 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head"><h2>交付物：看得见的东西</h2><p>下面每张图都是我们已经上线或已跑通的东西，不是效果图。</p></div>
+  <div class="sec-head"><h2>三种做法，差在哪</h2><p>同样一笔钱，买到的不是“页面数量”，是买家能不能自己判断。</p></div>
+  <table class="cmp">
+    <tr><th style="width:22%">对比项</th><th style="width:26%">模板站（3,000 元级）</th><th style="width:26%">普通建站公司（1.5 万起）</th><th>本方案</th></tr>
+    <tr><td>内容</td><td>套模板，车型靠你自己填</td><td>帮你排版，车型与参数还是你自己给</td><td class="us">车型库已建好，参数/装载量/价格区间都在里面</td></tr>
+    <tr><td>目的国信息</td><td>没有</td><td>顶多挂一段“我们出口到很多国家”</td><td class="us">每国一页：准入、认证、税费公式、物流、月度出口量</td></tr>
+    <tr><td>买家算得出落地价吗</td><td>算不出</td><td>算不出</td><td class="us">税费公式 + 装载量 + FOB 区间，能自己估</td></tr>
+    <tr><td>询盘去处</td><td>发到某个邮箱就没了</td><td>发到某个邮箱</td><td class="us">带浏览轨迹、自动评分、按国家分派、可导入 CRM</td></tr>
+    <tr><td>单证</td><td>无</td><td>无</td><td class="us">7 套模板 + 录入表 + 自动校验（8 分钟一票）</td></tr>
+    <tr><td>后续维护</td><td>改动另收费，常找不到人</td><td>按次报价，50–200 元/次</td><td class="us">年费含数据更新 + 12 次改稿，超出按价目表</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>交付物：看得见的东西</h2><p>下面每张图都是已经跑通的东西，不是效果图。</p></div>
   <div class="grid2">
-    <div class="shot"><img src="assets/shot-themes.jpg" alt="三套主题"><div class="cap"><b>独立站（5 语）</b><span>英/西/法/俄/阿，一套内容三种气质；手机端同样能看</span></div></div>
-    <div class="shot"><img src="assets/shot-cars.jpg" alt="车型库"><div class="cap"><b>车型库 + 规格单页</b><span>66 款车、参数/装载量/价格区间齐全，规格单页可直接发客户</span></div></div>
-    <div class="shot wide contain"><img src="assets/shot-40hq.png" alt="40HQ 装载量测算"><div class="cap"><b>40HQ 装载量自动测算</b><span>按车长宽高与双层支架规则算装柜台数，另含中欧班列普通箱 / 35 吨箱两档；新车型入库自动出起订量，详情页直接显示</span></div></div>
+    <div class="shot"><img src="assets/shot-cars.jpg" alt="车型库"><div class="cap"><b>车型库 + 规格单页</b><span>参数/装载量/价格区间齐全，规格单页可直接发客户</span></div></div>
+    <div class="shot wide contain"><img src="assets/shot-40hq.png" alt="40HQ 装载量测算"><div class="cap"><b>40HQ 装载量自动测算</b><span>按车长宽高与双层支架规则算装柜台数，另含中欧班列普通箱 / 35 吨箱两档；新车型入库自动出起订量</span></div></div>
     <div class="shot contain"><img src="assets/shot-market.png" alt="目的国页"><div class="cap"><b>目的国页</b><span>准入规则、认证、关税、月度出口量、物流航期，一页说清</span></div></div>
     <div class="shot contain"><img src="assets/shot-docs.png" alt="出口单证"><div class="cap"><b>出口单证 7 套</b><span>装箱单/发票/合同/报关单/要素/行驶证对照/合格证对照，8 分钟一票</span></div></div>
-    <div class="shot"><img src="assets/shot-report.png" alt="月报"><div class="cap"><b>每月一页纸报表</b><span>询盘数、来自哪国、看了哪些车、流失在哪，附三条改进建议</span></div></div>
+    <div class="shot"><img src="assets/shot-report.png" alt="报表"><div class="cap"><b>询盘一页纸报表</b><span>询盘数、来自哪国、看了哪些车、流失在哪，附三条改进建议（标准档按季度）</span></div></div>
     <div class="shot"><img src="assets/shot-spec.jpg" alt="规格单页"><div class="cap"><b>询盘闭环</b><span>表单直达邮箱 + 线索评分（看几次、比几款、停多久）+ 按国家分派</span></div></div>
   </div>
 </div></section>
 
-<section class="case"><div class="wrap">
-  <h2>案例：BOADIS（汽车出口商）</h2>
-  <div class="nums">
-    <div class="n"><b>66</b><span>款车型 · 参数与装载量</span></div>
-    <div class="n"><b>10</b><span>个品牌 · 含商用车线</span></div>
-    <div class="n"><b>5</b><span>种语言 · 同一后台</span></div>
-    <div class="n"><b>40</b><span>个目的国 · 准入与认证</span></div>
+<section id="case"><div class="wrap">
+  <div class="sec-head"><h2>脱敏试做：按这个标准，你的站 D10 能长这样</h2>
+    <p>同一批车型数据，左边是模板站常见做法，右边是我们在一个汽车出口项目里交付的目的国页（已去掉公司名与价格）。</p></div>
+  <div class="shot wide contain" style="border:1px solid var(--line);border-radius:12px;overflow:hidden">
+    <img src="assets/shot-trial.png" alt="模板站 vs 目的国页" style="width:100%;display:block">
   </div>
-  <p>BOADIS 是一家做吉利整车出口的香港公司。买家在 boadis.com 上看目的国行情与车型，询盘带着浏览轨迹进他们的邮箱，旺季一天出十几套单证——这套东西就是照他们的日常业务做的。目的国页背后是 43 个国家的关税与准入库，每页都标了核实月份和来源。</p>
-  <p style="margin-top:14px"><a class="btn btn-ghost" href="https://boadis.com" target="_blank" rel="noopener" style="background:transparent;color:#fff;border-color:#3d5c8a">打开 boadis.com →</a></p>
+  <div class="grid3" style="margin-top:26px">
+    <div class="card"><h3>左边的问题</h3><p>买家看到 6 张图 + 一句「联系我们」，只能问“多少钱”；你得从头解释关税、车龄、认证，一轮就是半小时。</p></div>
+    <div class="card"><h3>右边的效果</h3><p>准入、认证、税费公式、物流与月度出口量都在一页里。买家带着判断来问，问题变成“这个配置能不能下单”。</p></div>
+    <div class="card"><h3>试做包就是这一页</h3><p>先做 1 个国家页 + 3 个车型页，接上询盘表单，3–5 天出效果；满意再谈全站，2,980 全额抵扣。</p></div>
+  </div>
+</div></section>
+
+<section class="price" id="trial"><div class="wrap">
+  <div class="sec-head"><h2>单国试做包 · ¥2,980</h2><p>把第一笔钱降到“不用开会”的额度：先看一个国家页能不能带来像样的询盘。</p></div>
+  <div class="trial">
+    <div style="display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start">
+      <div style="flex:1;min-width:280px">
+        <div class="price-big">¥2,980</div>
+        <p class="note" style="margin-top:6px">签约正式站后<b>全额抵扣</b>；3–5 个工作日交付</p>
+      </div>
+      <div style="flex:2;min-width:320px">
+        <table class="tbl">
+          <tr><th style="width:44%">包含</th><td>1 个目的国页（准入 / 认证 / 税费 / 物流 / 出口量）</td></tr>
+          <tr><th>3 个车型页</th><td>参数、40HQ 装柜台数、FOB 区间（可打码）</td></tr>
+          <tr><th>询盘表单</th><td>提交直达你的邮箱，带浏览轨迹</td></tr>
+          <tr><th>1 张规格单页</th><td>图片版，可直接发客户或印出来</td></tr>
+          <tr><th>不做的事</th><td>不做全站、不做多语种、不接单证——先看这一页的效果</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
 </div></section>
 
 <section id="crm"><div class="wrap">
@@ -159,30 +203,60 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
 </div></section>
 
 <section class="price"><div class="wrap">
-  <div class="sec-head"><h2>三档打包</h2><p>建站 + 单证一起做，比分开找人省 30% 以上；次年只收维护费。</p></div>
+  <div class="sec-head"><h2>三档打包</h2><p>建站 + 单证一起做，比分开找人省 30% 以上；次年费用只覆盖“数据更新 + 维护 + 改稿”，不是保护费。</p></div>
   <div class="tiers">
     <div class="tier"><h3>起步</h3><div class="p">¥9,800<small> / 首年</small></div>
-      <ul><li>单语独立站（英）</li><li>20 款车型 + 图片处理</li><li>询盘表单直达邮箱</li><li>单证模板 7 套（不含代办）</li><li>次年 ¥4,800</li></ul></div>
+      <ul><li>单语独立站（英）</li><li>20 款车型 + 图片处理</li><li>目的国页 5 个</li>
+        <li>询盘表单直达邮箱</li><li>单证模板 7 套（不含代办）</li>
+        <li>次年 ¥4,800（含数据更新 + 6 次改稿）</li></ul></div>
     <div class="tier hot"><span class="tag">多数人选</span><h3>标准</h3><div class="p">¥15,800<small> / 首年</small></div>
-      <ul><li>三语站点 + 目的国页 5 个</li>
-        <li>60 款车型 + 规格单页</li>
-        <li>40HQ 装载量自动测算</li><li>线索评分 + 按国家分派</li><li>询盘导出 + 小满 OKKI 字段映射</li><li>单证 7 套 + 录入表 + 校验</li><li>每月一页报表</li><li>次年 ¥7,800</li></ul></div>
+      <ul><li>三语站点</li><li>60 款车型 + 规格单页</li><li>目的国页 5 个（超出 ¥300/个）</li>
+        <li>40HQ 装载量自动测算</li><li>线索评分 + 按国家分派</li><li>询盘导出 + 小满 OKKI 字段映射</li>
+        <li>单证 7 套 + 录入表 + 校验</li><li>每季度一页报表</li>
+        <li>次年 ¥7,800（含数据更新 + 12 次改稿）</li></ul></div>
     <div class="tier"><h3>旗舰</h3><div class="p">¥25,800<small> / 首年</small></div>
-      <ul><li>五语站点 + 目的国页 15 个</li><li>全部车型 + 商用车线</li>
-        <li>装载量口径自定义（含铁路/框架柜）</li><li>询盘运营（评分/分派/月报）</li><li>CRM 实时对接（Webhook）+ 自定义字段映射</li><li>单证 + 客户门户</li><li>季度复盘会</li><li>次年 ¥12,800</li></ul></div>
+      <ul><li>五语站点</li><li>全部车型 + 商用车线</li><li>目的国页不限（按需逐个加）</li>
+        <li>装载量口径自定义（含铁路/框架柜）</li><li>CRM 实时对接（Webhook）+ 自定义字段映射</li>
+        <li>单证 + 客户门户</li><li>每月一页报表 + 季度复盘会</li>
+        <li>次年 ¥12,800（含数据更新 + 无限次改稿）</li></ul></div>
   </div>
-  <p class="note">单点加项：加语言 ¥1,500 · 加国家 ¥300/个 · 加车型图 ¥80/款 · 视频 ¥600/条 · 单证单票代办 ¥300 起。</p>
+
+  <h3 style="margin:38px 0 10px;color:var(--navy);font-size:19px">改稿与加项价目（超出档位内额度时）</h3>
+  <table class="tbl">
+    <tr><th style="width:46%">项目</th><th style="width:22%">价格</th><td>说明</td></tr>
+    <tr><th>改价格 / 改参数</th><th>免费</th><td>标准档每月 2 次、旗舰不限次，24 小时内改完</td></tr>
+    <tr><th>加车型</th><th>¥80 / 款</th><td>含图片处理与参数录入；5 款起 9 折</td></tr>
+    <tr><th>加目的国页</th><th>¥300 / 个</th><td>含税费口径、认证、物流三段文案</td></tr>
+    <tr><th>加语言</th><th>¥1,500 / 语种</th><td>同一后台，一次加全站</td></tr>
+    <tr><th>改版式 / 换主题</th><th>¥500 / 次</th><td>不改信息架构的前提下</td></tr>
+    <tr><th>视频 / 素材包</th><th>另议</th><td>目前不做标准报价，按项目单谈</td></tr>
+  </table>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head"><h2>10 个工作日，5 步</h2><p>你只需要给资料，剩下的我们做；第 5 步当天就能上线。</p></div>
-  <div class="steps">
-    <div class="step"><em>Day 1–2</em><b>收资料</b><span>公司信息、车型与价格表、图片、目的国</span></div>
-    <div class="step"><em>Day 3–4</em><b>清洗与配图</b><span>价格区间打码、图片压缩打码、缺图补齐</span></div>
-    <div class="step"><em>Day 5–6</em><b>生成与填文案</b><span>站点生成、目的国文案、单证录入表</span></div>
-    <div class="step"><em>Day 7–8</em><b>验收与改</b><span>你逐页点一遍，我们改；含 3 轮小改</span></div>
-    <div class="step"><em>Day 9–10</em><b>上线</b><span>域名/邮箱/表单/反爬，交付后台与说明</span></div>
+  <div class="sec-head"><h2>10 个工作日，你只需给 5 样东西</h2>
+    <p>不需要你懂技术，也不需要你写文案——资料齐了每天都有可见的进展。</p></div>
+  <div class="grid2" style="margin-bottom:34px">
+    <div class="card"><h3>你要给的 5 样</h3>
+      <p>① 营业执照（或公司名与地址）<br>② 车型清单（名称/排量/座位）<br>③ 价格（可给区间，我们打码）<br>④ 图片（没有我们找）<br>⑤ 联系人电话 / WhatsApp</p></div>
+    <div class="card"><h3>我们不做的三件事</h3>
+      <p>不承诺询盘量、不代投广告、不做“包上首页”的排名承诺。<br>只保证：站打得开、数据有出处、单证能过。</p></div>
   </div>
+  <div class="steps">
+    <div class="step"><em>D1–D2</em><b>收资料</b><span>你给 5 样，我们当天确认缺什么</span></div>
+    <div class="step"><em>D3–D4</em><b>首页与目的国页</b><span>先出 1 页给你看方向，不对就改</span></div>
+    <div class="step"><em>D5–D6</em><b>车型库与参数</b><span>价格打码、图片压缩、装载量算好</span></div>
+    <div class="step"><em>D7–D8</em><b>全站预览 + 一轮修改</b><span>你逐页点，我们改（含 3 处小改）</span></div>
+    <div class="step"><em>D9–D10</em><b>上线与交接</b><span>域名/邮箱/表单/反爬，交后台与说明</span></div>
+  </div>
+
+  <h3 style="margin:38px 0 10px;color:var(--navy);font-size:19px">验收与保底</h3>
+  <table class="tbl">
+    <tr><th style="width:34%">承诺</th><td>上线后 15 天内，页面打不开、表单收不到、链接失效等功能性问题免费修</td></tr>
+    <tr><th>内容微调</th><td>上线后 30 天内 2 次免费微调（文案/价格/图片替换）</td></tr>
+    <tr><th>数据出处</th><td>目的国页的税费与准入标注核实月份与来源，规则变化以海关/报关行确认为准</td></tr>
+    <tr><th>不承诺</th><td>不做“保证询盘量”“保证排名第一”的承诺——这类承诺本身就是不负责任</td></tr>
+  </table>
 </div></section>
 
 <section class="contact" id="contact"><div class="wrap">
@@ -191,7 +265,7 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
     <div class="qr">
       <div class="box">微信二维码<br>（待放置）</div>
       <b>微信：L15988336681</b>
-      <p class="note">加微信请备注「建站」，我会先发你一个同类案例。</p>
+      <p class="note">加微信请备注「建站」，我会先发你一份脱敏试做。</p>
     </div>
     <form action="https://formsubmit.co/1524322544@qq.com" method="POST">
       <input type="hidden" name="_subject" value="Service inquiry from service page">
@@ -210,16 +284,16 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
       <label>想解决什么</label>
       <textarea name="message" placeholder="比如：主要出口阿尔及利亚和西非，想做个英文站，另外单证老是出错。"></textarea>
       <label>预算区间</label>
-      <select name="budget"><option>1 万以内</option><option>1–2 万</option><option>2 万以上</option><option>先看效果再定</option></select>
+      <select name="budget"><option>先做一国试做（2,980）</option><option>1 万以内</option><option>1–2 万</option><option>2 万以上</option><option>先看效果再定</option></select>
       <div style="margin-top:18px"><button class="btn btn-main" type="submit" style="border:0;cursor:pointer;width:100%">发送，2 个工作日内回你</button></div>
-      <p class="note">我们不做“保证询盘量”的承诺，也不代投广告；只保证站能打开、数据是真的、单证能过。</p>
+      <p class="note">我们不代投广告、不卖 CRM 席位；数据只进你的邮箱与 CRM。</p>
     </form>
   </div>
 </div></section>
 
 <footer><div class="wrap">
-  BOADIS EXPORT &amp; IMPORT CO., LIMITED · 香港博遠進出口有限公司<br>
-  Room H11, 1/F, Kaiser Estate Phase 2, 51 Man Yue Street, Hung Hom, Hong Kong<br>商务邮箱 sales@boadis.com · 微信 L15988336681
+  汽车出口独立站 · 出口单证服务　|　微信 L15988336681　|　sales@example.com<br>
+  本页为服务说明；文中截图来自已上线项目，公司名与价格已脱敏。
 </div></footer>
 
 </body></html>
