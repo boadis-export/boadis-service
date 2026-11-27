@@ -40,6 +40,12 @@ section{padding:64px 0}
 .shot .cap{padding:14px 18px;border-top:1px solid var(--line)}
 .shot .cap b{color:var(--navy);font-size:15.5px}
 .shot .cap span{display:block;color:var(--grey);font-size:13.5px;margin-top:4px}
+.crmimg{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.crmimg img{width:100%;display:block}
+.maplist{margin:18px 0 0;padding:0;list-style:none;font-size:14px;line-height:1.9}
+.maplist li{display:flex;gap:10px;border-bottom:1px dashed var(--line);padding:6px 0}
+.maplist code{background:#eef3fb;color:var(--navy);padding:1px 7px;border-radius:4px;font-size:12.5px}
+.maplist em{margin-left:auto;color:var(--grey);font-style:normal;font-size:12.5px}
 .case{background:var(--navy);color:#dbe6f6;padding:56px 0}
 .case h2{color:#fff;font-size:26px}
 .case .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:26px 0 22px}
@@ -126,15 +132,38 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
   <p style="margin-top:14px"><a class="btn btn-ghost" href="https://boadis.com" target="_blank" rel="noopener" style="background:transparent;color:#fff;border-color:#3d5c8a">打开 boadis.com →</a></p>
 </div></section>
 
+<section id="crm"><div class="wrap">
+  <div class="sec-head"><h2>询盘直接进你的 CRM，不用人再抄一遍</h2>
+    <p>客户在站上看了哪几款、比了几次、停留多久，跟着询盘一起进客户池——业务员打开 CRM 就能跟。</p></div>
+  <div class="grid2">
+    <div>
+      <ul class="maplist">
+        <li><code>name</code> → 联系人<em>直填</em></li>
+        <li><code>company</code> → 客户名称 / 公司名称<em>小满硬必填</em></li>
+        <li><code>email</code> → 联系人邮箱<em>小满硬必填（无邮箱走电话/社交账号）</em></li>
+        <li><code>whatsapp</code> → 联系电话 / 社交账号<em>归一化成 E.164</em></li>
+        <li><code>model</code> + <code>qty</code> → 询价产品 / 意向数量<em>需先在 CRM 建自定义字段</em></li>
+        <li><code>browsing_history</code> → 站内行为<em>我们的差异点</em></li>
+      </ul>
+    </div>
+    <div>
+      <p class="note">已在 <b>小满 OKKI</b> 的客户导入模板上逐条核对：公司名与邮箱两项硬必填，站上表单都有。</p>
+      <p class="note">导不进去的（国家/来源枚举没建、字段超长）我们负责清到成功为止，写进验收标准。</p>
+      <p class="note">没有 CRM 的客户，给一张字段完全一致的 Excel 台账，将来上系统直接导，不用重录。</p>
+    </div>
+  </div>
+  <div class="crmimg" style="margin-top:26px"><img src="assets/shot-crm.png" alt="小满 OKKI 字段映射表"></div>
+</div></section>
+
 <section class="price"><div class="wrap">
   <div class="sec-head"><h2>三档打包</h2><p>建站 + 单证一起做，比分开找人省 30% 以上；次年只收维护费。</p></div>
   <div class="tiers">
     <div class="tier"><h3>起步</h3><div class="p">¥9,800<small> / 首年</small></div>
       <ul><li>单语独立站（英）</li><li>20 款车型 + 图片处理</li><li>询盘表单直达邮箱</li><li>单证模板 7 套（不含代办）</li><li>次年 ¥4,800</li></ul></div>
     <div class="tier hot"><span class="tag">多数人选</span><h3>标准</h3><div class="p">¥15,800<small> / 首年</small></div>
-      <ul><li>三语站点 + 目的国页 5 个</li><li>60 款车型 + 规格单页</li><li>线索评分 + 按国家分派</li><li>单证 7 套 + 录入表 + 校验</li><li>每月一页报表</li><li>次年 ¥7,800</li></ul></div>
+      <ul><li>三语站点 + 目的国页 5 个</li><li>60 款车型 + 规格单页</li><li>线索评分 + 按国家分派</li><li>询盘导出 + 小满 OKKI 字段映射</li><li>单证 7 套 + 录入表 + 校验</li><li>每月一页报表</li><li>次年 ¥7,800</li></ul></div>
     <div class="tier"><h3>旗舰</h3><div class="p">¥25,800<small> / 首年</small></div>
-      <ul><li>五语站点 + 目的国页 15 个</li><li>全部车型 + 商用车线</li><li>询盘运营（评分/分派/月报）</li><li>单证 + 客户门户</li><li>季度复盘会</li><li>次年 ¥12,800</li></ul></div>
+      <ul><li>五语站点 + 目的国页 15 个</li><li>全部车型 + 商用车线</li><li>询盘运营（评分/分派/月报）</li><li>CRM 实时对接（Webhook）+ 自定义字段映射</li><li>单证 + 客户门户</li><li>季度复盘会</li><li>次年 ¥12,800</li></ul></div>
   </div>
   <p class="note">单点加项：加语言 ¥1,500 · 加国家 ¥300/个 · 加车型图 ¥80/款 · 视频 ¥600/条 · 单证单票代办 ¥300 起。</p>
 </div></section>
