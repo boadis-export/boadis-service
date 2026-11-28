@@ -28,6 +28,11 @@ section{padding:64px 0}
 .sec-head p{color:var(--grey);margin-top:8px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.docsrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px}
+.dprice{font-size:13px;color:#5f6b7c;background:#f2f5fb;border:1px solid #dfe6f1;border-radius:999px;padding:7px 14px}
+.dprice b{color:#1f3864;font-size:15px}
+.dlink{margin-left:auto;font-size:13px;font-weight:600;color:#1f5fbf;text-decoration:none}
+.dlink:hover{text-decoration:underline}
 .grid2 .shot.wide{grid-column:1 / -1}
 .grid2 .shot.wide img{height:auto;max-height:520px}
 .card{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff}
@@ -180,6 +185,23 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
   </div>
 </div></section>
 
+<section id="docs"><div class="wrap">
+  <div class="sec-head"><h2>出口单证：客户只填一张表，一票 8 分钟出 7 套</h2>
+    <p>不是帮你“打一遍单证”，是把制单变成可校验、可复用、不靠人的流程。</p></div>
+  <div class="grid3">
+    <div class="pain"><h4>你提供</h4><p>① 填我们的录入表（黄色格子、带下拉）：订单信息 13 项 + 车辆明细每台一行；<br>② 或者直接给 PI／合同、箱单、车辆清单（VIN + 车型 + 颜色 + 成交价），我们自己录。</p></div>
+    <div class="pain"><h4>我们做</h4><p>录入 → <b>12 项校验</b>（合同号、日期倒挂、目的港、车型库、VIN 长度/重复/含 OIQ、金额）→ 不合格不往下走 → 生成 → 金额/重量/件数交叉核对。</p></div>
+    <div class="pain"><h4>你拿到</h4><p>7 套 Excel（装箱单、发票、合同、报关单、报关要素表、行驶证中英对照、合格证中英对照）+ 一份可打印汇总，同一合同号可重跑。</p></div>
+  </div>
+  <div class="docsrow">
+    <span class="dprice">单票 <b>¥300</b></span>
+    <span class="dprice">包月 <b>¥1,500</b>（20 票）</span>
+    <span class="dprice">标准档及以上 <b>含</b></span>
+    <a class="dlink" href="assets/docs-service.pdf" target="_blank" rel="noopener">看一页说明（PDF）→</a>
+  </div>
+  <p class="note" style="margin-top:10px">边界：报关主体是客户或其报关行，我们不代办报关；只做真实单证，不做低报、改品名、换产地；HS/毛重/体积为制单口径，申报前由报关行按实车复核。</p>
+</div></section>
+
 <section id="crm"><div class="wrap">
   <div class="sec-head"><h2>询盘直接进你的 CRM，不用人再抄一遍</h2>
     <p>客户在站上看了哪几款、比了几次、停留多久，跟着询盘一起进客户池——业务员打开 CRM 就能跟。</p></div>
@@ -187,8 +209,6 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
     <div>
       <ul class="maplist">
         <li><code>name</code> → 联系人<em>直填</em></li>
-        <li>落地成本计算器（目的国页内）</li>
-      <li>Buyer Guide 一页纸 PDF（40 国 × 英/西/法/阿，留邮箱即得 + 自动回执）</li>
         <li><code>company</code> → 客户名称 / 公司名称<em>小满硬必填</em></li>
         <li><code>email</code> → 联系人邮箱<em>小满硬必填（无邮箱走电话/社交账号）</em></li>
         <li><code>whatsapp</code> → 联系电话 / 社交账号<em>归一化成 E.164</em></li>
@@ -214,7 +234,7 @@ footer{background:#0f1a2c;color:#8fa6c4;font-size:13px;padding:28px 0}
         <li>次年 ¥4,800（含数据更新 + 6 次改稿）</li></ul></div>
     <div class="tier hot"><span class="tag">多数人选</span><h3>标准</h3><div class="p">¥15,800<small> / 首年</small></div>
       <ul><li>三语站点</li><li>60 款车型 + 规格单页</li><li>目的国页 5 个（超出 ¥300/个）</li>
-        <li>40HQ 装载量自动测算</li><li>线索评分 + 按国家分派</li><li>询盘导出 + 小满 OKKI 字段映射</li>
+        <li>40HQ 装载量自动测算</li><li>落地成本计算器（目的国页内）</li><li>Buyer Guide 一页纸 PDF（英/西/法/阿四语，留邮箱即得 + 自动回执）</li><li>线索评分 + 按国家分派</li><li>询盘导出 + 小满 OKKI 字段映射</li>
         <li>单证 7 套 + 录入表 + 校验</li><li>每季度一页报表</li>
         <li>次年 ¥7,800（含数据更新 + 12 次改稿）</li></ul></div>
     <div class="tier"><h3>旗舰</h3><div class="p">¥25,800<small> / 首年</small></div>
